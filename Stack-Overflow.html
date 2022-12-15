@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stack Overflow</title>
-    <link rel="stylesheet" href="ShowcaseSOF.css">
+    <link rel="stylesheet" href="Showcase.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="page-container">
-      <header class="header-containr">
-        
+      <header class="topbar">
+        <div class="header-containr">
+          <a href="https://stackoverflow.com/#" class="topbar-toggle">
+            <div class="middle-line"></div>
+          </a>
+          <a href="https://stackoverflow.com/" class="topbar-logo">
+            <span class="logo-img"></span>
+          </a>
+		  <ol class="navigation">
+			<li class="topbar-navigation">About</li>
+			<li class="topbar-products">Products</li>
+			<li class="topbar-navigation">For Teams</li>
+		  </ol>
+		  <form class="search">
+            <div class="search-border">
+			  <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"></path></svg>
+			  <input type="text" maxlength="240" placeholder="Search..."class="search-box">
+            </div>
+		  </form>
+		  <nav class="topbar-right">
+			<ol class="topbar-right-content">
+			  <li class="topbar-li-search">
+                <button class="search-button">
+                  <svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"></path></svg>
+				</button>
+			  </li>
+			  <li class="topbar-li">
+				<a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f" class="topbar-login">Log in</a>
+			  </li>
+			  <li class="topbar-li">
+				<a href="https://stackoverflow.com/users/signup?ssrc=head" class="topbar-signup">Sign up</a>
+			  </li>
+			</ol>
+		  </nav>
+        </div>
       </header>
     </div>
   </body>
