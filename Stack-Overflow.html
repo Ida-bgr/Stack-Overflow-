@@ -7,10 +7,13 @@
     <title>Stack Overflow</title>
     <link rel="stylesheet" href="Showcase.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="page-container">
-      <header class="topbar">
+      <nav class="topbar">
         <div class="header-containr">
           <a href="https://stackoverflow.com/#" class="topbar-toggle">
             <div class="middle-line"></div>
@@ -18,34 +21,123 @@
           <a href="https://stackoverflow.com/" class="topbar-logo">
             <span class="logo-img"></span>
           </a>
-		  <ol class="navigation">
-			<li class="topbar-navigation">About</li>
-			<li class="topbar-products">Products</li>
-			<li class="topbar-navigation">For Teams</li>
-		  </ol>
-		  <form class="search">
-            <div class="search-border">
-			  <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"></path></svg>
-			  <input type="text" maxlength="240" placeholder="Search..."class="search-box">
-            </div>
-		  </form>
-		  <nav class="topbar-right">
-			<ol class="topbar-right-content">
-			  <li class="topbar-li-search">
+		      <ol class="navigation">
+            <li class="topbar-navigation">About</li>
+            <li class="topbar-products">Products</li>
+            <li class="topbar-navigation">For Teams</li>
+          </ol>
+          <form class="search">
+                <div class="search-border">
+            <svg aria-hidden="true" class="s-input-icon s-input-icon__search svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"></path></svg>
+            <input type="text" maxlength="240" placeholder="Search..."class="search-box">
+                </div>
+          </form>
+          <nav class="topbar-right">
+			      <ol class="topbar-right-content">
+			        <li class="topbar-li-search">
                 <button class="search-button">
                   <svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"></path></svg>
-				</button>
-			  </li>
-			  <li class="topbar-li">
-				<a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f" class="topbar-login">Log in</a>
-			  </li>
-			  <li class="topbar-li">
-				<a href="https://stackoverflow.com/users/signup?ssrc=head" class="topbar-signup">Sign up</a>
-			  </li>
-			</ol>
-		  </nav>
+				        </button>
+			        </li>
+			        <li class="topbar-li">
+				        <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2f" class="topbar-login">Log in</a>
+			        </li>
+			        <li class="topbar-li">
+				        <a href="https://stackoverflow.com/users/signup?ssrc=head" class="topbar-signup">Sign up</a>
+			        </li>
+            </ol>
+		      </nav>
         </div>
-      </header>
+      </nav>
+      <main>
+        <header class="main-container">
+          <div class="main-header">
+            <div class="main-header-content">
+              <div class="mh-region-first">
+                <img src="https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8" class="img-first">
+                <img src="https://cdn.sstatic.net/Img/home/illo-code.svg?v=b7ee00fff9d8" class="img-second">
+                <div class="mh-block-one">
+                  <div class="mh-block-one-content">
+                    <svg aria-hidden="true" class="fc-orange-500 mb16 svg-spot spotSearch" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M29.22 38.1a3.4 3.4 0 0 1 4.81-4.82l8.81 8.81a3.4 3.4 0 0 1-4.81 4.81l-8.81-8.8Z"></path><path d="M18.5 5a1 1 0 1 0 0 2c.63 0 1.24.05 1.84.15a1 1 0 0 0 .32-1.98A13.6 13.6 0 0 0 18.5 5Zm7.02 1.97a1 1 0 1 0-1.04 1.7 11.5 11.5 0 0 1 5.44 8.45 1 1 0 0 0 1.98-.24 13.5 13.5 0 0 0-6.38-9.91ZM18.5 0a18.5 18.5 0 1 0 10.76 33.55c.16.57.46 1.12.9 1.57L40 44.94A3.5 3.5 0 1 0 44.94 40l-9.82-9.82c-.45-.45-1-.75-1.57-.9A18.5 18.5 0 0 0 18.5 0ZM2 18.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0Zm29.58 15.2a1.5 1.5 0 1 1 2.12-2.12l9.83 9.83a1.5 1.5 0 1 1-2.12 2.12l-9.83-9.83Z"></path></svg>
+                    <h2 class="subheading">
+                      Find the best answer to your technical question, help others answer theirs
+                    </h2>
+                    <a href="https://stackoverflow.com/users/signup?ssrc=product_home" class="mh-block-one-btn">
+                      Join the community
+                    </a>
+                    <p class="mh-p">or
+                      <a href="https://stackoverflow.com/questions" class="mh-block-one-srch">search content</a>
+                    </p>
+                  </div>
+                </div>  
+                <div class="mh-block-two">
+                  <div class="mh-block-two-content">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotLock" width="48" height="48" viewBox="0 0 48 48"><path opacity=".2" d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"></path><path d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z"></path></svg>
+                    <h2 class="subheading">
+                      Want a secure, private space for your technical knowledge?
+                    </h2>
+                    <a href="https://stackoverflow.co/teams/" class="mh-block-two-btn">
+                      Discover Teams
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h1 class="mh-region-second">
+                Every
+                <span class="mh-region-second-span">
+                  developer
+                </span>
+                has a 
+                tab open to 
+                Stack Overflow
+              </h1>
+              <span class="separator"></span>
+              <div class="mh-region-third">
+                <div class="mh-region-third-content">
+                  <div class="region-third-title">
+                    100+ million
+                  </div>
+                  <div class="region-third-body">
+                    monthly visitors to Stack Overflow & Stack Exchange
+                  </div>
+                </div>
+                <div class="mh-region-third-content">
+                  <div class="region-third-title">
+                    45.1+ billion
+                  </div>
+                  <div class="region-third-body">
+                    Times a developer got help since 2008
+                  </div>
+                </div>
+                <div class="mh-region-third-content">
+                  <div class="region-third-title">
+                    191% ROI
+                  </div>
+                  <div class="region-third-body">
+                    from companies using Stack Overflow for Teams
+                  </div>
+                </div>
+                <div class="mh-region-third-content">
+                  <div class="region-third-title">
+                    5,000+
+                  </div>
+                  <div class="region-third-body">
+                    Stack Overflow for Teams instances active every day
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="design-blue-800 b-f" aria-hidden="true"></span>
+          <span class="design-gold b-f" aria-hidden="true"></span>
+          <span class="design-blue-300 b-f" aria-hidden="true"></span>
+          <span class="design-purple b-f" aria-hidden="true"></span>
+          <span class="design-green b-f" aria-hidden="true"></span>
+          <span class="design-orang b-f" aria-hidden="true"></span>
+          <span class="design-blue-200 b-f" aria-hidden="true"></span>
+          <span class="design-yellow b-f" aria-hidden="true"></span>     
+        </header>
+      </main>
     </div>
   </body>
 </html>
