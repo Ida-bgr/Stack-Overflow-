@@ -844,6 +844,7 @@ main {
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 48px;
+  padding-bottom: 32px;
   max-width: 1070px;
   z-index: 30;
   position: relative;
@@ -1059,7 +1060,7 @@ main {
 }
 
 .large-organizations-btn {
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -1084,7 +1085,7 @@ main {
 }
 
 .small-teams-btn {
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -1110,3 +1111,98 @@ main {
     font-size: 15px;
   }
 }
+
+.second-section {
+  padding-top: 32px;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.second-section-title {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6a737c;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.org-use-sof {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 90px;
+  width: 100%;
+}
+
+.Expensify {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.box {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media (max-width: 575.98px) {
+  .microsoft {
+    display: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+  } 
+}
+@media (max-width: 767.98px) {
+  .logitech {
+    display: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+.org-logo-img {
+  display: block;
+  margin-top: 2px;
+}
+
+.h-scroll {
+  width: 40%;
+  height: 10px;
+  border: 1px solid transparent;
+  background-color: #c8cbcf;
+  border-radius: 5px;
+}
+
+.carousel {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.c-pointer {
+  display: inline-block;
+  width: 24px;
+  height: 6px;
+  margin: 6px 4px;
+  background-color: #babfc4;
+  border-radius: 100px;
+}
+
+.c-pointer-dark {
+  display: inline-block;
+  width: 24px;
+  height: 6px;
+  margin: 6px 4px;
+  background-color: #232629;
+  border-radius: 100px;
+}
+
