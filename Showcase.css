@@ -13,30 +13,14 @@
   src: local('C:\Users\Aida\Documents\Work-Space\Stack overflow\Stack-Overflow-\Font\RobotoSlab.ttf');
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
   padding-top: 50px;
   font-size: 11px;
-  min-width: auto;
-  font-family: 'Source Sans Pro Light', sans-serif;
 }
   
 .topbar{
   width: 100%;
   background-color: #f8f9f9;
-  min-width: auto;
   height: 50px;
   border-top: 3px solid #f48225;
   display: flex;
@@ -50,8 +34,6 @@ body {
 
 .header-containr {
   width: 100%;
-  max-width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -62,6 +44,11 @@ body {
     display: flex;
     margin: 0 68px;
     align-items: center;
+  }
+}
+@media (min-width: 1500px) {
+  .header-containr {
+    margin: 0 128px;
   }
 }
 
@@ -229,7 +216,6 @@ body {
   height: 100%;
   list-style: none;
   margin-left: auto;
-  padding: 0px;
   overflow: auto;
 }
 
@@ -257,8 +243,9 @@ body {
 
 .search-button svg {
   fill: #525960;
-  margin-top: 3px;
-  padding-left: 0.1em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 0.07em;
 }
 
 @media (min-width: 768px) {
@@ -321,7 +308,7 @@ main {
 }
 
 .main-header {
-  clip-path: url(#curve);
+  
   width: 100%;
   height: 100%;
   padding: 12px;
@@ -336,6 +323,7 @@ main {
 @media (min-width: 768px) {
   .main-header{
     padding: 32px;
+    z-index: 1;
   }
 }
 @media (min-width: 992px) {
@@ -345,7 +333,7 @@ main {
 }
 
 .main-header-content {
-  clip-path: url("https://stackoverflow.com/#curve");
+  clip-path: url(#curve);
   padding: 12px;
   background: linear-gradient(180deg, #232629 0%, #525960 130%);
   border-radius: 7px;
@@ -357,13 +345,19 @@ main {
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 128px;
+    padding-bottom: 144px;
+  }
+}
+@media (min-width: 992px) {
+  .main-header-content{
+    padding-bottom: 148px;
   }
 }
 
 @media (min-width: 768px) {  
   .mh-region-first {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -403,6 +397,7 @@ main {
 @media (min-width: 768px) {
   .mh-block-one{
     padding: 16px;
+    max-width: 474px;
   }
 }
 
@@ -470,7 +465,10 @@ main {
   padding: 11px 32px;
   border: 1px solid transparent;
   margin-top: 2px;
-} 
+}
+.mh-block-one-btn:hover{
+  background-color: #da680b;
+}
 @media (min-width: 768px) {
   .mh-block-one-btn {
     font-size: 1.32em;
@@ -493,6 +491,10 @@ main {
 
 .mh-block-one-srch {
   color: #232629;
+  cursor: pointer;
+}
+.mh-block-one-srch:hover{
+  color: #da680b;
 }
 
 .mh-p::after {
@@ -517,6 +519,7 @@ main {
 @media (min-width: 768px) {
   .mh-block-two{
     padding: 16px;
+    max-width: 474px;
   }
 }
 
@@ -564,6 +567,9 @@ main {
   padding: 12px 41px;
   border: 1px solid transparent;
 }
+.mh-block-two-btn:hover{
+  background-color: #0074cc;
+}
 @media (min-width: 576px) {
   .mh-block-two-btn{
     margin-top: 3px;
@@ -599,7 +605,7 @@ main {
   position: relative;
   padding-top: 64px;
   padding-bottom: 64px;
-  line-height: 1.3;
+  line-height: 1.32;
 }
 .mh-region-second-span{
   color: #f2740d;
@@ -614,8 +620,8 @@ main {
 }    
 @media (min-width: 768px){
   .mh-region-second {
-    font-size: 55px;
-    padding-top: 50px;
+    font-size: 54px;
+    padding-top: 55px;
   }
   .mh-region-second-span {
     height: unset;
@@ -628,7 +634,8 @@ main {
 }
 @media (min-width:1200px){
   .mh-region-second {
-    margin: 0 180px;
+    margin: 0 145px;
+    padding-top: 50px;
   }
   .mh-region-second-span {
     display: inline-block;
@@ -636,7 +643,7 @@ main {
 }
 @media (min-width: 1400px){
   .mh-region-second {
-    margin: 0 250px;
+    margin: 0 245px;
   }
 }
 
@@ -778,7 +785,7 @@ main {
     height: 32px;
     user-select: none;
     pointer-events: none;
-    top: 1 0.9rem;
+    top: 114px;
     right: 128px;
     z-index: 50;
     color: #27348b;
@@ -791,7 +798,7 @@ main {
     height: 64px;
     user-select: none;
     pointer-events: none;
-    top: 670px;
+    top: 679px;
     left: -16px;
     z-index: 100;
     color: #48a868;
@@ -804,7 +811,7 @@ main {
     height: 128px;
     user-select: none;
     pointer-events: none;
-    top: 670px;
+    top: 679px;
     right: 0;
     z-index: 50;
     color: #f2740d;
@@ -818,7 +825,7 @@ main {
     user-select: none;
     pointer-events: none;
     left: 128px;
-    bottom: -910px;
+    bottom: -918px;
     z-index: 50;
     color: #aedafc;
   }
@@ -831,14 +838,48 @@ main {
     user-select: none;
     pointer-events: none;
     right: 128px;
-    bottom: -910px;
+    bottom: -885px;
     z-index: 50;
     color: #e9c43f;
   }
 }
+@media (min-width: 992px) {
+  .design-orange {
+    top: 592px;
+  }
+  .design-green {
+    top: 592px;
+  }
+
+  .design-yellow {
+    bottom: -715px;
+  }
+
+  .design-blue-200 {
+    bottom: -746px;
+  }
+}
 @media (min-width: 1200px) {
   .design-blue-200{
-    bottom: -570px;
+    bottom: -580px;
+  }
+  .design-orange {
+    top: 510px;
+  }
+  .design-green {
+    top: 510px;
+  }
+
+  .design-yellow {
+    bottom: -548px;
+  }
+}
+@media (min-width: 1500px) {
+  .design-blue-200{
+    bottom: -490px;
+  }
+  .design-yellow {
+    bottom: -458px;
   }
 }
 
@@ -865,6 +906,12 @@ main {
     margin-right: 68px;
   }
 }
+@media (min-width: 1500px) {
+  .first-section {
+    margin-left: 118px;
+    margin-right: 118px;
+  }
+}
 
 .first-section-content {
   display: flex;
@@ -874,20 +921,23 @@ main {
 }
 @media (min-width:768px) {
   .first-section-content{
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: -256px;
+    margin-left: 68px;
+    margin-right: 68px;
+    margin-top: -270px;
   }
 }
 @media (min-width: 992px) {
   .first-section-content {
     flex-direction: row;
+    margin-top: -275px;
   }
 }
 @media (min-width: 1200px) {
   .first-section-content {
     margin-left: 48px;
     margin-right: 48px;
+    margin-top: -260px;
+
   }
 }
 /* @media (min-width: 1400px) {
