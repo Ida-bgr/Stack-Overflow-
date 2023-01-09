@@ -3439,7 +3439,6 @@ input:checked + .slider:before {
 }
 
 .fourth-section {
-  max-width: 891px;
   z-index: 25;
   position: relative;
   display: flex;
@@ -3453,16 +3452,28 @@ input:checked + .slider:before {
 }
 @media (min-width: 992px) {
   .fourth-section {
-    flex-wrap: unset;
+    padding: 0 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .fourth-section {
+    padding: 0 97px;
+  }
+}
+@media (min-width: 1400px) {
+  .fourth-section {
+    padding: 0 257px;
   }
 }
 
 .fourth-section-animations {
   flex-basis: 25%;
-  height: 194px;
 }
 
 .fs-items-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 6px;
   padding-right: 6px;
   min-height: 174px;
@@ -3475,15 +3486,42 @@ input:checked + .slider:before {
   border: 1px solid #d6d9dc;
   position: relative;
 }
+@media (min-width: 576px) {
+  .fs-items-content {
+    padding-bottom: 70px;
+  }
+  .fs-items-content-db {
+    padding-bottom: 50px;
+  }
+  .fs-items-content-dbt {
+    padding-bottom: 30px;
+  }
+}
 @media (min-width: 768px) {
   .fs-items-content {
-    padding: 24px;
+    padding-left: 11px;
+    padding-top: 11px;
+    padding-right: 11px;
+  }
+  .fs-items-content-db {
+    padding-bottom: 50;
+  }
+}
+@media (min-width: 992px) {
+  .fs-items-content {
+    padding-bottom: 47px;
+  }
+}
+@media (min-width: 1200px) {
+  .fs-items-content {
+    padding-left: 16px;
+    padding-top: 9px;
+    padding-right: 16px;
   }
 }
 
 .fs-items-svg {
   fill: #27348b;
-  display: block;
   margin-bottom: 12px;
   margin-left: 46px;
   margin-right: 46px;
@@ -3492,20 +3530,40 @@ input:checked + .slider:before {
   .fs-items-svg {
     margin-left: 57px;
     margin-right: 57px;
+    margin-top: 15px;
   }
 }
 
 .fs-items-content p {
-  margin-top: -10px;
   font-size: 0.95rem;
+  padding-left: 7px;
+  padding-right: 7px;
   font-family: 'Source Sans Pro', sans-serif;
-  position: absolute;
-  padding: 10px;
-  display: block;
+  line-height: 1.3;
+}
+@media (min-width:576px) {
+  .fs-items-content-dbt p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (min-width: 768px) {
+  .fs-items-content-dbt p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fs-items-content-dbt {
+    margin-top: 10px;
+    padding-bottom: 45px;
+  }
   .fs-items-content p {
     font-size: 17px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-items-content-dbt {
+    margin-top: 12px;
+    padding-bottom: 47px;
   }
 }
 
