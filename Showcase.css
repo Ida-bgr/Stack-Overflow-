@@ -3775,9 +3775,13 @@ input:checked + .slider:before {
   margin-right: auto;
   line-height: 1.3;
 }
+@media (min-width: 768px) {
+  .sixth-sec-title {
+    font-size: 27px;
+  }
+}
 
 .additional-products {
-  max-width: 713px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -3796,10 +3800,28 @@ input:checked + .slider:before {
 @media (min-width: 768px) {
   .additional-products {
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 } 
+@media (min-width: 992px) {
+  .additional-products {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .additional-products {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+@media (min-width: 1400px) {
+  .additional-products {
+    margin-left: 338px;
+    margin-right: 338px;
+  }
+}
 
 .additional-products-block {
   flex-basis: 40%;
@@ -3829,6 +3851,7 @@ input:checked + .slider:before {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0px;
+  line-height: 1.3;
 }
 @media (min-width: 768px) {
   .additional-products-p {
@@ -3837,12 +3860,15 @@ input:checked + .slider:before {
 } 
 
 .additional-products-btn {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   border: 1px solid transparent;
   cursor: pointer;
-  padding: 11px 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   margin-bottom: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -3856,6 +3882,12 @@ input:checked + .slider:before {
   background-color: #f2740d;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .additional-products-btn {
+    font-size: 0.95rem;
+  }
+}
+
 
 .additional-products-bottom {
   font-size: 0.9rem;
@@ -3866,7 +3898,13 @@ input:checked + .slider:before {
   display: inline-block;
   line-height: calc(15 / 13);
   position: relative;
-  padding: 0.65rem 32px;
+  padding: 0.75rem 32px;
+}
+@media (min-width: 768px) {
+  .additional-products-bottom {
+    font-size: 15px;
+    padding: 0.9rem 32px;
+  }
 }
 
 .ap-btm-span {
